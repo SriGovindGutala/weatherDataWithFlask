@@ -1,0 +1,40 @@
+summary: "Weather Stats"
+description: "This endpoint is used to get weather stats, all filters and parameters are optional. Max pagination limit is 500"
+produces:
+- "application/json"
+parameters:
+- in : "query"
+  name: "station_id"
+  type: "string"
+  required: "false"
+- in : "query"
+  name: "limit"
+  type: "number"
+  required: "false"
+- in : "query"
+  name: "offset"
+  type: "number"
+  required: "false"
+responses:
+  200:
+    description: "Success"
+    schema:
+      type: "object"
+      properties:
+        count:
+          type: "number"
+        data:
+          type: "array"
+          items:
+            type: "object"
+            properties:
+              avg_max_temp:
+                type: "number"
+              avg_min_temp:
+                type: "number"
+              id:
+                type: "number"
+              station_id:
+                type: "string"
+              total_acc_precipitation:
+                type: "number"

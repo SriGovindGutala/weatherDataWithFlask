@@ -1,0 +1,8 @@
+flasgger===0.9.5
+Flask-SQLAlchemy===3.0.3
+Flask===2.2.3
+SQLAlchemy===2.0.5.post1
+dask===2023.2.0
+dask[dataframe]
+yapf===0.32.0
+pylint===2.11.1

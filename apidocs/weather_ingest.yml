@@ -1,0 +1,17 @@
+summary: "Weather Ingest"
+description: "This endpoint is used to ingest weather data"
+produces:
+- "application/json"
+parameters:
+- in: "query"
+  name: "dir"
+  type: "string"
+  required: "false"
+responses:
+  200:
+    description: "Success"
+    schema:
+      type: "string"
+      properties:
+        message:
+          type: "string"

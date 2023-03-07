@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "b30e6586-0e41-411b-8e7a-22766421901d",
+		"name": "Weather Flask App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all weather data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/weather",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all weather stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/weather/stats",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"weather",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ingest data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/weather/ingest",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"weather",
+						"ingest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
